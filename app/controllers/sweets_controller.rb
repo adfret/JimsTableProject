@@ -1,0 +1,7 @@
+class SweetsController < ApplicationController
+
+
+
+
+
+end

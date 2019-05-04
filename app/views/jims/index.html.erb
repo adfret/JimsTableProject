@@ -1,0 +1,5 @@
+<%@jims.each do |jim| %>
+<%= link_to "#{jim.id}", jim%>
+<br>
+<%= jim.created_at %>
+<% end %>

@@ -1,0 +1,20 @@
+
+<ol>
+<li><%= @vendor.name %></li>
+</ol>
+
+
+<h2>vendor's vendor id Sums</h2>
+<%=@vendor.jims.map(&:id).sum%>
+<br>
+<br>
+<%= link_to "#{@vendors}", jim_path %>
+<h1>Top jimss for vendor</h1>
+<ol>
+<!-- parameter in path name in line 18 is for specific! show page-->
+<% @vendor.jims.each do |jims| %>
+<li><%= link_to "#{jims.name}", jims_path(jims.id) %></li>
+  <%end %></ol>
+
+<h2> Featured Blog jim </h2>
+<%= link_to "#{@vendor.jims.name}", jim_path%>
